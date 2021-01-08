@@ -11,4 +11,4 @@ def funclambda (text):
     return lambda param : param + text
 
 res2 = funclambda('cola')
-print(res2("colita igual viene la"))
+print(res2("colita igual viene la "))
