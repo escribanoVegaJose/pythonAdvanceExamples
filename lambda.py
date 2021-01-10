@@ -1,10 +1,14 @@
-# función rápida
+# función rápida y anonima
 
-# estructura -> lambda parámetros : sentencia 
+# estructura -> lambda parámetro1, param2 : sentencia 
 
 # ejemplo 1 
 res = lambda firstParam , secParam : firstParam * secParam
-print(res(2,"-Las cosas de la vida-"))
+
+# def res (firstParam , secParam):
+#     return firstParam * secParam
+print(res(2, "-las cosas de la vida-"))
+
 
 # ejemplo 2 lambda dentro de una función 
 def funclambda (text): 
