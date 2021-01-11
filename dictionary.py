@@ -1,41 +1,40 @@
-# Estructura de datos clave valor. 
-# nombre_dictionary= {"clave": valor, "clave":valor}
+# Estructura de datos clave valor. Nos permite manejar Json
+# nombre_dictionary= {"clave": valor, "clave":valor, ...}
+carBmw = {"brand": "bmw", "potencia": 158, "precio": 34000}
+carPorsche = {"brand": "porsche", "potencia": 215, "precio": 48000}
+#  es posible encadenar diccionarios.
+carsToBuy = {"coches": [carBmw, carPorsche]}
 
-# Ejemplo
-car = {"brand": "bmw", "potencia":158, "precio":34000}
-car2= {"brand": "porsche", "potencia":215, "precio":48000}
-carsToBuy={"coches":[car,car2]}
-
-# Acceso al dato
-print (carsToBuy["coches"])
-print (car["brand"])
+# Acceso al dato 
+# print (carsToBuy["coches"])
+# print (carBmw["brand"])
 
 print("..................")
-
-for value in car.values():
-  print(value)
+# accede a los valores
+for value in carBmw.values():
+    print(value)
+print("..................")
+# accede a las claves
+for key in carBmw.keys():
+    print(key)
+print("..................")
+# acceder a la clave valor indistintamente
+for itemKey, itemValue in carBmw.items():
+    print(itemKey, itemValue)
 print("..................")
 
-for key in car.keys():
-  print(key)
-print("..................")
-  
-for itemKey, itemValue in car.items():
-  print(itemKey,itemValue)
-print("..................")
-
+print(carBmw)
 # modificación del dato
-car["brand"]="ferrari"
+carBmw["brand"]= "ferrari"
 # Añadir nuevo elemento
-car["nuevo"]=True
-print(car)
+carBmw["nuevo"]= True
+print(carBmw)
 
 # borrar key, se puede utilizar del o pop de la misma forma
-del car["brand"]
-car.pop("potencia")
-print(car)
+del carBmw["brand"]
+carBmw.pop("potencia")
+print(carBmw)
 
 # limpiar diccionario
-car.clear()
-
-
+carBmw.clear()
+print(carBmw)
