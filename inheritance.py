@@ -51,4 +51,3 @@ print(mamifero.milk)
 mamifero.amamantar()
 
 animal= Animal("Perro", 45, 40, True)
-animal.
